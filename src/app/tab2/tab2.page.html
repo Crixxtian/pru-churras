@@ -19,6 +19,7 @@
     <ion-col><ion-button expand="full" shape="round" color="secondary" (click)="mudarNumero4()">9</ion-button></ion-col>
 
     <ion-col><ion-button expand="full" shape="round" color="secondary" (click)="mudarNumero5()">12</ion-button></ion-col>
+
   </ion-row>
   <br>
   <br>
@@ -56,7 +57,7 @@
   <br>
 
   <ion-row>
-    <ion-col> <ion-button shape="round" color="secondary" expand="full">LIMPAR</ion-button></ion-col>
+    <ion-col> <ion-button (click)="limparDados()" shape="round" color="secondary" expand="full">LIMPAR</ion-button></ion-col>
   </ion-row>
 </ion-grid>
 </ion-content>
