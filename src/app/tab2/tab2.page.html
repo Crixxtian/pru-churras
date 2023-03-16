@@ -7,23 +7,56 @@
 </ion-header>
 
 <ion-content>
-<h1>Valendo!!: </h1>
+<h1 class="titulo">Valendo!!: {{numero}} </h1>
 <ion-grid>
   <ion-row>
-    <ion-col><ion-button expand="full" shape="round" color="secondary">1</ion-button></ion-col>
+    <ion-col><ion-button expand="full" shape="round" color="secondary" (click)="mudarNumero1()">1</ion-button></ion-col>
 
-    <ion-col><ion-button expand="full" shape="round" color="secondary">3</ion-button></ion-col>
+    <ion-col><ion-button expand="full" shape="round" color="secondary" (click)="mudarNumero2()">3</ion-button></ion-col>
 
-    <ion-col><ion-button expand="full" shape="round" color="secondary">6</ion-button></ion-col>
+    <ion-col><ion-button expand="full" shape="round" color="secondary" (click)="mudarNumero3()">6</ion-button></ion-col>
 
-    <ion-col><ion-button expand="full" shape="round" color="secondary">9</ion-button></ion-col>
+    <ion-col><ion-button expand="full" shape="round" color="secondary" (click)="mudarNumero4()">9</ion-button></ion-col>
 
-    <ion-col><ion-button expand="full" shape="round" color="secondary">12</ion-button></ion-col>
+    <ion-col><ion-button expand="full" shape="round" color="secondary" (click)="mudarNumero5()">12</ion-button></ion-col>
   </ion-row>
+  <br>
+  <br>
+  <br>
   <ion-row>
     <ion-col> <h3>time 1</h3></ion-col>
     <ion-col> <h3>time 2</h3></ion-col>
   </ion-row>
+  <ion-row>
+    <ion-col> <ion-button (click)="somarPontuacao1()" shape="round" color="secondary">+</ion-button></ion-col>
+    <ion-col> <ion-button (click)="somarPontuacao2()" shape="round" color="secondary">+</ion-button></ion-col>
+  </ion-row>
+  <ion-row >
+    <ion-col> <h3>{{pontuacao1}}</h3></ion-col>
+    <ion-col> <h3>{{pontuacao2}}</h3></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col> <ion-button (click)="subPontuacao1()"shape="round" color="secondary">-</ion-button></ion-col>
+    <ion-col> <ion-button (click)="subPontuacao2()" shape="round" color="secondary">-</ion-button></ion-col>
+  </ion-row>
+  <ion-row >
+    <ion-col> <h1>Partidas</h1></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col><h2>time 1</h2></ion-col>
+    <ion-col><h2>{{vitoria1}}</h2></ion-col>
+  </ion-row>
+  <br>
+  <br>
+  <ion-row>
+    <ion-col><h2>time 2</h2></ion-col>
+    <ion-col><h2>{{vitoria2}}</h2></ion-col>
+  </ion-row>
+  <br>
+  <br>
 
+  <ion-row>
+    <ion-col> <ion-button shape="round" color="secondary" expand="full">LIMPAR</ion-button></ion-col>
+  </ion-row>
 </ion-grid>
 </ion-content>

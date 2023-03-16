@@ -29,6 +29,7 @@ state = 'default'
       this.info = 'girando...';
       this.state = this.state === 'default' ? 'rotated' : 'default';
 
+
       setTimeout(()=>{
 
       if(Math.random()< 0.5){
