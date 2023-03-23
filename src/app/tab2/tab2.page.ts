@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  numero = 0;
+  numero = 1;
   pontuacao1 = 0;
   pontuacao2 = 0;
   vitoria1 = 0;
@@ -16,7 +16,7 @@ export class Tab2Page {
 
   constructor() { }
   mudarNumero1() {
-    this.numero = 1
+    this.numero = 0
   }
   mudarNumero2() {
     this.numero = 3
@@ -55,7 +55,6 @@ export class Tab2Page {
 
     if (this.pontuacao1 >= 1) {
       this.pontuacao1 -= 1
-
     }
 
   }

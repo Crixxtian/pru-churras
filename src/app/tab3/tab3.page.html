@@ -7,11 +7,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-list>
+  <ion-item>
+    <ion-input label="Input with placeholder" placeholder="Insira o número do dado"></ion-input>
+  </ion-item>
+</ion-list>
+<img src="../../assets/dado.jpg" alt="">
+<h1> valor dado: {{valordado}}</h1>
+<br>
+<br>
+<ion-button>Rodar dados!!</ion-button>
 </ion-content>
