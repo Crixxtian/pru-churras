@@ -11,6 +11,6 @@ export class Tab3Page {
   dadop= 'assets/dado.jpg';
   dadom= 'assets/gifDado.gif';
   tamnahodado= 0;
-  valordado=0;
+  valordado= 0;
 
 }
